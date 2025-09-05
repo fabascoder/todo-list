@@ -33,11 +33,12 @@ Task.prototype.top = function () {
 };
 
 Task.prototype.format = function (el1, el2) {
-  const upperCaseName = el1.toUpperCase();
-  const upperCasePriority = el2.toUpperCase();
-  console.log(upperCaseName, upperCasePriority);
+  console.log('aqui é o format()')
+  const format1 = el1.trim();
+  const format2 = format1.charAt(0).toUpperCase() + format1.slice(1).toLowerCase();
+  const formatPriority = el2.toUpperCase();
+  console.log(format2, formatPriority);
 };
-
 const textInput = new Dom("#taskInput");
 const priorityInput = new Dom("#priorityInput");
 const btnButton = new Dom("#addTaskBtn");
