@@ -65,13 +65,13 @@ Task.prototype.top = function () {
     const textoItem = spamItem.textContent; 
     const prioridadeItem = parseInt(textoItem.split(" - ")[1]); 
 
-    if(prioridadeNum <= 3) {
+    if(prioridadeNum < prioridadeItem) {
       this.list.insertBefore(li, itens[i]);
       li.classList.add('li-prioridade');
       inserido = true; 
-      break;
+      break;  
     } 
- 
+    
   }
 
   if(!inserido) {
