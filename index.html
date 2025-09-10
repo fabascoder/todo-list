@@ -3,37 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 20px;
-      }
-      input,
-      button {
-        margin: 5px;
-        padding: 8px;
-      }
-      ul {
-        list-style: none;
-        padding: 0;
-      }
-      li {
-        margin: 5px 0;
-        background: #f2f2f2;
-        padding: 8px;
-        border-radius: 5px;
-      }
-    </style>
+    <title>Document</title>´
+    <link rel="stylesheet" href="./to-do/css/style.css">
   </head>
 
   <body>
-    <h2>Adicionar Tarefa</h2>
-    <input type="text" id="taskInput" placeholder="Digite a tarefa..." />
-    <input type="text" id="priorityInput" placeholder="Prioridade (número)" />
-    <button id="addTaskBtn">Adicionar</button>
-    <ul class="lista"></ul>
-    <div class="result"></div>
-    <script src="./to-do/js/script.js"></script>
+    <main>
+      <div class="container">
+        <div class="text">
+          <div>
+            <h2>Adicionar Tarefa</h2>
+            <input type="text" id="taskInput" placeholder="Digite a tarefa..." />
+            <input type="number" id="priorityInput" placeholder="Prioridade (número)" />
+            <button id="addTaskBtn">Adicionar</button>
+          </div>
+        </div>
+        <ul class="lista"></ul>
+        <div class="result"></div>
+        <script src="./to-do/js/script.js"></script>
+      </div>
+    </main>
   </body>
 </html>

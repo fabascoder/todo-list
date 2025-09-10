@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f7f7f7;
+}
+
+input,
+button {
+  margin: 5px;
+  padding: 8px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  display: flex; 
+  justify-content: space-between;  
+  align-items: center;
+  background: #f2f2f2;
+  padding: 8px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #888;
+  margin: 20px;
+}
+
+.btn-remove {
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding-top: 8px;
+    cursor: pointer;
+
+}
+
+.btn-remove:hover {
+    background-color: #fff;
+    color: red;
+    transition: 0.1s;
+    box-shadow: 5px 5px 10px #b4b4b4;
+
+}
+
+.li-prioridade {
+    font-weight: 600;
+    color: #333; 
+    background-color: #dbdada;
+}
+
+.container {
+    width: 500px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lista-ativa {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 9px;
+}
+
+
+.text {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    margin-bottom: 0px;
+}
+
+h2 {
+    text-align:  center;
+}
+
+.msg-invalido {
+    font-weight: 500;
+    font-size: 22px;
+    text-align: start;
+}
+
+input {
+    outline: none;
+}
+
+.input-invalido {
+    border: 1px solid red;
+}
+
+.input-valido {
+    border: 1px solid #696969
+}
+
+#addTaskBtn {
+    cursor: pointer;
+    border: none;
+    color: #111;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    
+}
+
+#addTaskBtn:hover {
+    background-color: #d6d6d6;
+    color: #1a1a1a; 
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
